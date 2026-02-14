@@ -1,0 +1,116 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "Wii U/3DS Hacks Guide",
+      "tone": "Technical, Premium, Underground, Trustworthy",
+      "language": "fr-FR",
+      "keywords": ["Homebrew", "Hacking", "Wii U", "3DS", "Guide", "Modding"]
+    },
+    "typography": {
+      "font_family": {
+        "headings": "Space Grotesk, sans-serif",
+        "body": "Inter, sans-serif",
+        "code": "JetBrains Mono, monospace"
+      },
+      "scale": {
+        "h1": "text-5xl md:text-7xl font-bold tracking-tighter",
+        "h2": "text-3xl md:text-5xl font-semibold tracking-tight",
+        "h3": "text-2xl md:text-3xl font-medium",
+        "body": "text-base md:text-lg leading-relaxed text-slate-300",
+        "caption": "text-sm text-slate-500 uppercase tracking-widest"
+      },
+      "imports": [
+        "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400&display=swap"
+      ]
+    },
+    "colors": {
+      "background": {
+        "primary": "#050505",
+        "secondary": "#0A0A0A",
+        "surface": "#121212"
+      },
+      "accent": {
+        "primary": "#1E3A8A",
+        "secondary": "#3B82F6",
+        "glow": "rgba(59, 130, 246, 0.5)",
+        "deep_blue": "#0f172a"
+      },
+      "text": {
+        "primary": "#F8FAFC",
+        "secondary": "#94A3B8",
+        "muted": "#64748B",
+        "gradient": "bg-gradient-to-b from-white to-slate-400 bg-clip-text text-transparent"
+      },
+      "border": {
+        "subtle": "rgba(255, 255, 255, 0.08)",
+        "highlight": "rgba(59, 130, 246, 0.3)"
+      },
+      "status": {
+        "success": "#10B981",
+        "warning": "#F59E0B",
+        "error": "#EF4444",
+        "info": "#3B82F6"
+      }
+    },
+    "glassmorphism": {
+      "cards": "bg-black/40 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.5)]",
+      "overlay": "bg-black/60 backdrop-blur-md",
+      "navbar": "bg-[#050505]/80 backdrop-blur-lg border-b border-white/5"
+    },
+    "layout": {
+      "container": "max-w-7xl mx-auto px-6 md:px-12",
+      "spacing": {
+        "section": "py-24 md:py-32",
+        "element": "gap-6 md:gap-8"
+      },
+      "grid": {
+        "console_selector": "grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto"
+      }
+    },
+    "motion": {
+      "transitions": "transition-all duration-300 ease-out",
+      "hover_lift": "hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(59,130,246,0.2)]",
+      "fade_in": "animate-in fade-in slide-in-from-bottom-4 duration-700"
+    },
+    "components": {
+      "buttons": {
+        "primary": "bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-full font-medium transition-all shadow-[0_0_20px_rgba(37,99,235,0.3)] hover:shadow-[0_0_30px_rgba(37,99,235,0.5)]",
+        "secondary": "bg-white/5 hover:bg-white/10 text-white border border-white/10 px-6 py-3 rounded-full backdrop-blur-md transition-all",
+        "discord": "flex items-center gap-2 bg-[#5865F2]/10 hover:bg-[#5865F2]/20 text-[#5865F2] border border-[#5865F2]/20 px-4 py-2 rounded-lg transition-all"
+      },
+      "badges": {
+        "update": "inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-500/10 text-blue-400 border border-blue-500/20"
+      },
+      "cards": {
+        "console": "group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-8 transition-all duration-500 hover:border-blue-500/30"
+      }
+    },
+    "assets": {
+      "images": {
+        "wiiu_console": "https://images.unsplash.com/photo-1719253528820-e0008c952a69?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjB2aWRlbyUyMGdhbWUlMjBjb25zb2xlJTIwZGV2aWNlJTIwZGFya3xlbnwwfHx8fDE3NzEwMzAyNDJ8MA&ixlib=rb-4.1.0&q=85",
+        "3ds_console": "https://images.unsplash.com/photo-1633499737221-5e3406d4d952?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwxfHxOaW50ZW5kbyUyMDNEUyUyMGNvbnNvbGUlMjBkYXJrJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3NzEwMzAyMjZ8MA&ixlib=rb-4.1.0&q=85",
+        "hero_bg_abstract": "https://images.unsplash.com/photo-1761845091243-243b042ebd20?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwzfHxXaWklMjBVJTIwY29uc29sZSUyMGRhcmslMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc3MTAzMDIyNXww&ixlib=rb-4.1.0&q=85"
+      },
+      "icons": {
+        "library": "lucide-react",
+        "required": ["Gamepa2", "Zap", "ArrowRight", "Github", "Menu", "X", "CheckCircle2", "Construction"]
+      }
+    }
+  },
+  "instructions_to_main_agent": [
+    "1. SETUP: Ensure Tailwind config includes the custom colors (obsidian: #050505, midnight: #0A2472) and fonts (Space Grotesk, Inter).",
+    "2. BACKGROUND: The HTML body MUST have 'bg-[#050505]' and 'text-slate-50'. Do NOT use gray-900.",
+    "3. HERO: Create a 'Tracing Beam' effect or a subtle radial gradient glow (blue-900/20) behind the hero text to make it pop against the black.",
+    "4. CONSOLE CARDS: Use the Glassmorphism style. The Wii U card is ACTIVE (clickable, full opacity). The 3DS card is 'Coming Soon' (opacity-50, grayscale, non-clickable cursor-not-allowed).",
+    "5. LANGUAGE: All visible text MUST be in French. (e.g., 'Commencer le guide', 'Mise à jour', 'Support Discord').",
+    "6. ACCESSIBILITY: Ensure blue text on black has sufficient contrast. Use lighter blues (blue-400) for text, darker blues for backgrounds.",
+    "7. NO BORDERS: Avoid thick borders. Use 'border-white/5' or 'border-white/10' for subtle separation.",
+    "8. TESTING: Add data-testid to the 'Start Guide' button and Console Cards."
+  ],
+  "universal_guidelines": [
+    "Avoid 'AI Slop': Do not use generic centered layouts without texture.",
+    "Texture: Add a subtle noise overlay if possible to the background to reduce banding on pure black.",
+    "Gradients: Use gradients for TEXT or BORDERS, not for main backgrounds.",
+    "Spacing: Use generous padding (py-24, py-32) for sections."
+  ]
+}
